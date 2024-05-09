@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+      <div class="smoothie-machine">
+        <header class="machine-header">
+            <h1>Welcome to <span class="brand-name"> The Smoothie Machine </span></h1>
+            <p>Customize your smoothie with our variety of fresh ingredients.</p>
+        </header>
+
+        
+        <div class="content-wrapper">
+          <div class="form-container">
+          <section class="order-form">
+              <form id="smoothieForm">
+                  <div class="form-section base-selection">
+                      <h2>Choose Your Base</h2>
+                      <div class="options">
+                          <label><input type="radio" name="base" value="Milk"> Milk</label>
+                          <label><input type="radio" name="base" value="Yogurt"> Yogurt</label>
+                          <label><input type="radio" name="base" value="Juice"> Juice</label>
+                      </div>
+                  </div>
+
+                  <div class="form-section ingredient-selection">
+                      <h2>Select Ingredients</h2>
+                      <div class="ingredients-grid">
+                          <label><input type="checkbox" name="ingredient" value="Banana"> Banana</label>
+                          <label><input type="checkbox" name="ingredient" value="Strawberry"> Strawberry</label>
+                          <label><input type="checkbox" name="ingredient" value="Blueberry"> Blueberry</label>
+                          <!-- Additional ingredients can be added here -->
+                      </div>
+                  </div>
+
+                  <div class="form-section extras-selection">
+                      <h2>Add Extras</h2>
+                      <div class="extras-grid">
+                          <label><input type="checkbox" name="extra" value="Honey"> Honey</label>
+                          <label><input type="checkbox" name="extra" value="Nuts"> Nuts</label>
+                          <label><input type="checkbox" name="extra" value="Protein Powder"> Protein Powder</label>
+                          <!-- Additional extras can be added here -->
+                      </div>
+                  </div>
+
+                  <button type="submit" id="orderButton">Blend My Smoothie!</button>
+              </form>
+              <aside class="Image">
+                <img src="Images/SMOOTHIE.png" alt="A picture of a smoothie">
+
+            </aside>
+          </section>
+            </div>
+
+          <aside class="summary-container">
+
+        <!-- Real-time Summary Section -->
+            <div id="realTimeSummary" class="real-time-summary">
+              <h3>Your Ingredients</h3>
+                <p id="realTimeBase"><span class="label">Base</span><span class="colon">:</span> None</p>
+                <p id="realTimeIngredients"><span class="label">Ingredients</span><span class="colon">:</span> None</p>
+                <p id="realTimeExtras"><span class="label">Extras</span><span class="colon">:</span> None</p>
+            </div>
+
+          <!-- Message Box -->
+            <div id="orderSummary" class="order-summary">
+              <h3>Order Summary</h3>
+              <p>Your smoothie details will appear here after ordering.</p>
+              <button id="newOrderButton">Create New Order</button>
+            </div>
+
+        </aside>
+        </div>
+      </div>
+
+  <!-- New Orders Table Section -->
+  <section id="ordersTableSection">
+    <h2>Order History</h2>
+    <table id="ordersTable">
+      <thead>
+        <tr>
+          <th>Base</th>
+          <th>Ingredients</th>
+          <th>Extras</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Order rows will be added here dynamically -->
+      </tbody>
+    </table>
+  </section>
+         
+        
+      <footer class="machine-footer">
+          <p>Thank you for using The Smoothie Machine!</p>
+      </footer>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

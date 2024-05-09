@@ -1,0 +1,271 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    background-color: black;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+/* Header Styles */
+.machine-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.machine-header h1 {
+    font-size: 2.5em;
+    color: #4a7c59;
+}
+
+/* Style for the brand name */
+.machine-header .brand-name {
+    color: #ec9689; /* Example color - change it to whatever you want */
+}
+
+.machine-header p {
+    font-size: 1.2em;
+    color: #dedede;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.order-form, .real-time-summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 45%; /* Adjust width as per layout */
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #d1eedb; /* Example color, change as needed */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 45%; /* Adjust width as per layout */
+    margin-bottom: 20px;
+}
+
+.order-form {
+    min-width: 630px;
+    max-width: 750px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    font-size: 1.8em;
+    color: #4a7c59;
+    margin-bottom: 10px;
+}
+
+.options, .ingredients-grid, .extras-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    background: #e7f6e4;
+    border: 2px solid #c4e3ca;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #d1eedb;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+#orderButton {
+    background-color: #4a7c59;
+    font-family: 'Patrick Hand', cursive;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+#orderButton:hover {
+    background-color: #3b8d4b;
+    transform: translateY(5px) translateX(5px) rotateX(1deg);
+  }
+
+/* Summary Container Styling */
+.summary-container {
+    background-color: #fff0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 45%; /* Adjust width as per layout */
+}
+
+/* Real-time Summary Panel Styling */
+.real-time-summary {
+    min-width: 630px;
+    max-width: 750px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.real-time-summary h3 {
+    font-size: 1.5em;
+    color: #ec9689;
+    margin-bottom: 10px;
+}
+
+/* Styling for label text */
+.real-time-summary .label {
+    color: #ec9689; /* Change to your preferred color */
+}
+
+/* Styling for colon */
+.real-time-summary .colon {
+    color:#ec9689; /* Change to your preferred color */
+}
+
+
+/* Order Summary Styling */
+.order-summary {
+    background-color: black;
+    min-width: 630px;
+    max-width: 750px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* Glowing Text */
+.order-summary h3 {
+    color: white;
+    font-size: 1.2em;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.order-summary p {
+    color: #4a7c59;
+    font-size: 1.7em;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* New Order Button Styling */
+#newOrderButton {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #4a7c59;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px; /* Space from the message */
+  transition: transform 0.3s;
+}
+
+#newOrderButton:hover {
+  background-color: #3b8d4b;
+  transform: translateY(5px) translateX(10px) rotateX(1deg);
+}
+
+/* Orders Table Section Styling */
+#ordersTableSection {
+  margin-left:150px ;
+  width: 80%; /* Take full width under the form and summary container */
+  padding: 20px;
+  background-color: #d1eedb; /* Same theme as form container */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; /* Space from the above elements */
+}
+
+#ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#ordersTable th, #ordersTable td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: left;
+}
+
+#ordersTable th {
+  background-color: #4a7c59;
+  color: white;
+}
+
+#ordersTable td button {
+  padding: 5px 10px;
+  font-family: 'Patrick Hand', cursive;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#ordersTable td button:hover {
+  background-color: #cc0000;
+}
+
+
+
+
+/* Footer */
+.machine-footer {
+  background-color: black;
+    text-align: center;
+    margin-top: 30px;
+    color: #6a6a6a;
+}
+
+.Image img{
+  max-width: 200px;
+  max-height: 250px;
+  margin-left: 400px;
+  margin-top: -350px;
+}
